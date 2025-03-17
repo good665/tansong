@@ -1,0 +1,55 @@
+// 공통 스타일
+.table-container {
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.table-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+// 헤더 스타일 적용 (위치정보 시스템과 동일)
+.custom-table thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+// 짝수 행 배경색 (가독성 증가)
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+// 마우스 호버 효과
+.custom-table tbody tr:hover {
+  background-color: #e6f7ff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+// 반응형 스타일
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
